@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct HealthTrackDailyApp: App {
+    @StateObject private var healthStore = HealthStore()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(healthStore)
         }
     }
 }
