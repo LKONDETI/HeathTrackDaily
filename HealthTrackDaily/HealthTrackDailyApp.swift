@@ -10,11 +10,16 @@ import SwiftUI
 @main
 struct HealthTrackDailyApp: App {
     @StateObject private var healthStore = HealthStore()
+    @AppStorage("isLoggedIn") private var isLoggedIn = false
     
     var body: some Scene {
         WindowGroup {
-            RootView()
-                .environmentObject(healthStore)
+            if isLoggedIn {
+                RootView()
+                    .environmentObject(healthStore)
+            } else {
+                AuthContainerView()
+            }
         }
     }
 }
