@@ -1,9 +1,4 @@
-//
-//  HealthTrackDailyApp.swift
-//  HealthTrackDaily
-//
-//  Created by Lakshmi Kondeti on 11/28/25.
-//
+
 
 import SwiftUI
 

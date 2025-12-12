@@ -1,9 +1,3 @@
-//
-//  HealthTrackDailyUITestsLaunchTests.swift
-//  HealthTrackDailyUITests
-//
-//  Created by Lakshmi Kondeti on 11/28/25.
-//
 
 import XCTest
 
